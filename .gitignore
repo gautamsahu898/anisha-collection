@@ -1,0 +1,6 @@
+.env
+anisha.sqlite
+anisha.sqlite-shm
+anisha.sqlite-wal
+uploads/
+node_modules/

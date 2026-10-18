@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: anisha-collection-test
+    runtime: node
+    region: singapore
+    plan: 0.5c-512mb
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/setup/status
+    autoDeployTrigger: commit
+    disk:
+      name: anisha-test-database
+      mountPath: /opt/render/project/src/storage
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /opt/render/project/src/storage
+      - key: ADMIN_NAME
+        value: Anisha Test Admin
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

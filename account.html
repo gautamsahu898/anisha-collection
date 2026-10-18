@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ef"><title>Your account | Anisha Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4"><link rel="stylesheet" href="site-polish.css?v=8"><link rel="stylesheet" href="account-product.css?v=3">
+</head>
+<body class="inner-page account-page">
+  <div class="announcement">ANISHA COLLECTION <span>—</span> A little something for your next creation</div>
+  <header class="header inner-header"><a class="brand" href="index.html#top"><span class="brand-mark">AC</span><span>ANISHA COLLECTION<small>FABRICS WITH A STORY</small></span></a><nav class="inner-nav"><a href="index.html#shop">Shop fabrics</a><a href="index.html#collections">Collections</a><a href="index.html#story">Our story</a></nav><a class="inner-bag" href="index.html#shop">Continue shopping <span>↗</span></a></header>
+  <main class="inner-main">
+    <div class="page-kicker"><a href="index.html">Home</a><span>/</span><span>My account</span></div>
+    <div id="accountNotice" class="page-notice" hidden></div>
+    <section id="authPanel" class="auth-layout" hidden><div class="auth-card"><div class="auth-tabs"><button data-mode="login" class="active" type="button">Sign in</button><button data-mode="register" type="button">Create account</button></div><div id="authFormHost"></div></div></section>
+    <section id="dashboard" hidden><div class="account-welcome"><div><p class="eyebrow">WELCOME BACK</p><h2 id="welcomeName">Your collection, together.</h2><p>Manage the details that make every order feel easy.</p></div><div class="account-welcome-actions"><a id="studioLink" class="studio-link" href="admin.html" hidden><span class="studio-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 20v-6h6v6M9 10h.01M15 10h.01"/></svg></span><span class="studio-link-copy"><b>Admin Studio</b><small>Manage your collection</small></span><span class="studio-link-arrow" aria-hidden="true">↗</span></a><button id="signOutButton" class="quiet-button" type="button">Sign out ↗</button></div></div>
+      <div class="account-shortcuts"><a href="#saved"><span class="shortcut-icon">♡</span><b>Saved fabrics</b><small>Your considered collection</small></a><a href="#addresses"><span class="shortcut-icon">⌖</span><b>Delivery addresses</b><small>Ready when you are</small></a><a href="#orders"><span class="shortcut-icon">□</span><b>Your orders</b><small>Every parcel, in one place</small></a></div>
+      <section id="saved" class="account-section"><div class="section-title"><div><p class="eyebrow">KEPT CLOSE</p><h2>Saved fabrics</h2></div><a href="index.html#shop" class="text-link">Find another favourite ↗</a></div><div id="savedFabrics" class="account-fabric-grid"><div class="loading-card">Gathering your saved fabrics…</div></div></section>
+      <section id="addresses" class="account-section"><div class="section-title"><div><p class="eyebrow">A LITTLE MORE CONVENIENT</p><h2>Delivery addresses</h2></div><button id="addAddressButton" type="button" class="quiet-button">＋ Add address</button></div><div id="addressList" class="address-grid"></div><form id="addressForm" class="address-form" hidden><div class="address-form-heading"><div><h3>New delivery address</h3><p>Saved securely to your account for future orders.</p></div><button id="cancelAddress" type="button" class="form-close" aria-label="Cancel">×</button></div><div class="address-fields"><label>Address label<input name="label" placeholder="Home, studio…" value="Home" maxlength="40" required></label><label>Full name<input name="name" autocomplete="name" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel" required></label><label class="span-2">Street address<input name="address" autocomplete="street-address" required></label><label>City<input name="city" autocomplete="address-level2" required></label><label>PIN code<input name="pin" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="postal-code" required></label></div><button type="submit" class="button dark">Save address <span>↗</span></button></form></section>
+      <section id="orders" class="account-section"><div class="section-title"><div><p class="eyebrow">FROM OUR STUDIO TO YOU</p><h2>Your orders</h2></div></div><div id="orderList" class="order-list"></div></section>
+    </section>
+  </main>
+  <footer class="inner-footer"><span>© 2026 Anisha Collection</span><span>Made with care in India ✳</span><a href="index.html#top">Back to the store ↑</a></footer>
+  <div id="toast" class="page-toast" role="status" aria-live="polite"></div><script src="account.js?v=3"></script>
+</body></html>
